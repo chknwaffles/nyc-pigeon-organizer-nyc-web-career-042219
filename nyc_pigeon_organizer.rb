@@ -8,10 +8,13 @@ def nyc_pigeon_organizer(data)
         binding.pry if catagory == :gender
         if list[e] == nil
           list[e] = {catagory => []}
-        elsif list[e][catagory] == nil
-          list[e] = 
-        list[e][catagory] << k.to_s
+        end
         
+        if list[e][catagory] == nil
+          list[e][catagory] == [k.to_s]
+        else
+          list[e][catagory] << k.to_s
+        end
       end
     end
   end
