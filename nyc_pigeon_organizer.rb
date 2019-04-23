@@ -11,7 +11,7 @@ def nyc_pigeon_organizer(data)
         end
         
         if list[e][catagory] == nil
-          list[e][catagory] == [k.to_s]
+          list[e][catagory] = [k.to_s]
         else
           list[e][catagory] << k.to_s
         end
